@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello World!</h1>
+        <Weather city="Moscow" />
+        <Weather city="Antalya" />
         <Weather city="Bucharest" />
       </header>
     </div>

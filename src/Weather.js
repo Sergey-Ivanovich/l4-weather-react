@@ -4,7 +4,9 @@ import { Audio } from "react-loader-spinner";
 export default function Weather(props) {
   function handleApiResponse(response) {
     alert(
-      `In ${response.data.city}, It is ${response.data.temperature.current}`
+      `In ${response.data.city}, It is ${Math.round(
+        response.data.temperature.current
+      )}°C`
     );
   }
 
@@ -14,8 +16,6 @@ export default function Weather(props) {
 
   return (
     <div>
-      <h2>This is working rn</h2>
-
       <Audio
         height="80"
         width="80"
