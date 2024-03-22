@@ -13,14 +13,18 @@ export default function Weather(props) {
   axios.get(apiUrl).then(handleApiResponse);
 
   return (
-    <Audio
-      height="80"
-      width="80"
-      radius="9"
-      color="green"
-      ariaLabel="loading"
-      wrapperStyle
-      wrapperClass
-    />
+    <div>
+      <h2>This is working rn</h2>
+
+      <Audio
+        height="80"
+        width="80"
+        radius="9"
+        color="green"
+        ariaLabel="loading"
+        wrapperStyle
+        wrapperClass
+      />
+    </div>
   );
 }
